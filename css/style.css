@@ -3,3 +3,45 @@
     margin: 0;
     padding: 0;
 }
+main{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+img{
+    width: 350px;
+}
+img:hover{
+    animation-duration:1s ;
+    animation-name: shake;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    cursor: pointer;
+
+}
+@keyframes shake {
+    0%{
+        transform: translateX(-5px);
+        transform: translateY(-5px);
+
+    }25%{
+        transform: translateX(10px);
+        transform: translateY(10px);
+    }50%{
+        transform: translateX(-5px);
+        transform: translateY(-5px);
+
+    }70%{
+        transform: translateX(10px);
+        transform: translateY(10px);
+
+    }100%{
+        transform: translateX(-5px);
+        transform: translateY(-5px);
+    }
+}
+    #joke{
+        text-align: center;
+        width: 80%;
+        font-size: 1.3rem;
+    }
